@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var arr = [1,215,1,68,7,86,4,3,5,4,8,8,7,96,44,770];
+		var arr2 = [];
+		
+		for(var i=0;i<arr.length;i++){
+			var onOff = true;
+				for(var j=0;j<arr.length;j++){
+						if(i===j){
+						continue;
+					}else{
+						if(arr[i] === arr[j]){
+							onOff = false;
+						}
+					}
+				}
+			if(onOff){
+				arr2.push(arr[i]);
+			}
+		}
+		console.log(arr2)
+		
+//		for(var i=0;i<arr.length;i++){
+//			var onOff = true;
+//			for(var j=0;j<arr.length;j++){
+//				if(i == j){
+//					continue;
+//				}else{
+//					if(arr[i] === arr[j]){
+//						onOff = false;
+//					}
+//				}
+//			}
+//			if(onOff){
+//				arr2.push(arr[i]);
+//			}
+//		}
+//		console.log(arr2)
+		
+//		for(var i=0;i<arr.length;i++){
+//			var onOf = true;
+//			for(var j=0;j<arr.length;j++){
+//				if(i == j){
+//					continue;
+//				}else{
+//					if(arr[i] === arr[j]){
+//						onOf = false;
+//					}
+//				}
+//			}
+//			if(onOf){
+//				arr2.push(arr[i])
+//			}
+//		}
+//		
+//		console.log(arr2)
+		
+		
+//		for(var i=0;i<arr.length;i++){
+//			var onOff = true;
+//			for(var j=0;j<arr.length;j++){
+//				if(i == j){
+//					continue;
+//				}else{
+//					if(arr[i] === arr[j]){
+//						onOff = false;
+//					}
+//				}
+//			}
+//			if(onOff){
+//				arr2.push(arr[i])
+//			}
+//		}
+//		console.log(arr2)
+	</script>
+</html>
